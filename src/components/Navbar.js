@@ -5,10 +5,10 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-const Navbar = () => {
+const MyNavbar = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
-      <Container fluid>
+      <Container fluid className="d-flex justify-content-between">
         <Navbar.Brand href="#">FASTECH</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -23,7 +23,7 @@ const Navbar = () => {
             <Nav.Link href="#action2">HOW IT WORKS</Nav.Link>
           </Nav>
           <Form className="d-flex">
-            <Button variant="outline-light" className="rounded">
+            <Button variant="outline-dark" className="rounded">
               CREATE
             </Button>
             <Button>SIGN IN</Button>
@@ -34,4 +34,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default MyNavbar;
