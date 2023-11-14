@@ -1,33 +1,35 @@
-import React from "react";
-import { Navbar, Nav, Button } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 const Navbar = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
-      <Navbar.Brand href="#home">
-        <h1>FASTECH</h1>
-      </Navbar.Brand>
-
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          {/* Add your menu items here */}
-          <Nav.Link href="#home">HOME</Nav.Link>
-          <Nav.Link href="#features">MY PROFILE</Nav.Link>
-          <Nav.Link href="#contact">ACTIVITY</Nav.Link>
-          <Nav.Link href="#contact">HOW IT </Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-
-      <Navbar.Collapse className="justify-content-end">
-        <Navbar.Text>
-          <Button variant="outline-light" className="mr-2">
-            Create
-          </Button>
-          <Button variant="outline-light">Sign In</Button>
-        </Navbar.Text>
-      </Navbar.Collapse>
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container fluid>
+        <Navbar.Brand href="#">FASTECH</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: "100px" }}
+            navbarScroll
+          >
+            <Nav.Link href="#action1">HOME</Nav.Link>
+            <Nav.Link href="#action2">MY PROFILE</Nav.Link>
+            <Nav.Link href="#action2">ACTIVITY</Nav.Link>
+            <Nav.Link href="#action2">HOW IT WORKS</Nav.Link>
+          </Nav>
+          <Form className="d-flex">
+            <Button variant="outline-light" className="rounded">
+              CREATE
+            </Button>
+            <Button>SIGN IN</Button>
+          </Form>
+        </Navbar.Collapse>
+      </Container>
     </Navbar>
   );
 };
