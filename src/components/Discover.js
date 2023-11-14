@@ -1,6 +1,7 @@
+// Discover.js
 import React from "react";
 
-export default function Discover() {
+export function Discover() {
   return (
     <div>
       <h1>Discover</h1>

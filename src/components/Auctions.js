@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function Auctions() {
+const Auctions = () => {
   return (
     <div>
       <h1>Auctions</h1>
     </div>
   );
-}
+};
+export default Auctions;

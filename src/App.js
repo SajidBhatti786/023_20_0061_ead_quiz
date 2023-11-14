@@ -3,7 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Welcome from "./components/Welcome";
 import Auctions from "./components/Auctions";
-import Discover from "./components/Discover";
+import { Discover } from "./components/Discover";
 import Footer from "./components/Footer";
 function App() {
   return (
